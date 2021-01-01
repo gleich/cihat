@@ -1,9 +1,13 @@
 package main
 
 import (
-	"github.com/Matt-Gleich/logoru"
+	"fmt"
+
+	"github.com/Matt-Gleich/cihat/pkg/api"
 )
 
 func main() {
-	logoru.Success("Program booted up!")
+	client := api.CreateClient()
+	out := api.GetChecks(client)
+	fmt.Println(out)
 }
