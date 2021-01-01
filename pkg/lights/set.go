@@ -17,9 +17,16 @@ func UpdateLights(queryContent api.QueryOutline) {
 	)
 
 	for _, repo := range repos {
+		if y == 8 {
+			break
+		}
 		var hasValidChecks bool
 		checks := repo.Node.DefaultBranchRef.Target.CheckSuites.Nodes
 		for _, check := range checks {
+			if x == 8 {
+				break
+			}
+
 			var c color.Color
 			switch check.Status {
 			case "COMPLETED":

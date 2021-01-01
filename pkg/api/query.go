@@ -3,7 +3,7 @@ package api
 const query = `{
 	viewer {
 	repositories(
-		first: 7
+		first: 20
 		orderBy: { field: PUSHED_AT, direction: DESC }
 		ownerAffiliations: [COLLABORATOR, OWNER]
 	) {
@@ -12,7 +12,7 @@ const query = `{
 			defaultBranchRef {
 			target {
 				... on Commit {
-				checkSuites(first: 8) {
+				checkSuites(first: 20) {
 					nodes {
 					conclusion
 					status
