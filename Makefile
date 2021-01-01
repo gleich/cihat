@@ -3,15 +3,15 @@
 ##########
 
 build-docker-prod:
-	docker build -t docker_username/project_name:latest .
+	docker build -t mattgleich/cihat:latest .
 build-docker-dev:
-	docker build -f dev.Dockerfile -t docker_username/project_name:test .
+	docker build -f dev.Dockerfile -t mattgleich/cihat:test .
 build-docker-dev-lint:
-	docker build -f dev.lint.Dockerfile -t docker_username/project_name:lint .
+	docker build -f dev.lint.Dockerfile -t mattgleich/cihat:lint .
 build-go:
 	go get -v -t -d ./...
 	go build -v .
-	rm project_name
+	rm cihat
 
 #########
 # Linting
@@ -30,7 +30,7 @@ lint-hadolint:
 	hadolint dev.Dockerfile
 	hadolint dev.lint.Dockerfile
 lint-in-docker: build-docker-dev-lint
-	docker run docker_username/project_name:lint
+	docker run mattgleich/cihat:lint
 
 #########
 # Testing
@@ -40,7 +40,7 @@ test-go:
 	go get -v -t -d ./...
 	go test -v ./...
 test-in-docker: build-docker-dev
-	docker run docker_username/project_name:test
+	docker run mattgleich/cihat:test
 
 ##########
 # Grouping
