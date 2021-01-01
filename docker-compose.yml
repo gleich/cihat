@@ -1,6 +1,8 @@
 version: "3"
 services:
   cihat:
+    volumes:
+      - "~/cihat-config/:/root/cihat-config/"
     build:
       context: .
       dockerfile: docker/Dockerfile
