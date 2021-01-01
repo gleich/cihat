@@ -3,11 +3,11 @@
 ##########
 
 build-docker-prod:
-	docker build -t mattgleich/cihat:latest .
+	docker build -f docker/Dockerfile -t mattgleich/cihat:latest .
 build-docker-dev:
-	docker build -f dev.Dockerfile -t mattgleich/cihat:test .
+	docker build -f docker/dev.Dockerfile -t mattgleich/cihat:test .
 build-docker-dev-lint:
-	docker build -f dev.lint.Dockerfile -t mattgleich/cihat:lint .
+	docker build -f docker/dev.lint.Dockerfile -t mattgleich/cihat:lint .
 build-go:
 	go get -v -t -d ./...
 	go build -v .
@@ -26,9 +26,9 @@ lint-gomod:
 lint-goreleaser:
 	goreleaser check
 lint-hadolint:
-	hadolint Dockerfile
-	hadolint dev.Dockerfile
-	hadolint dev.lint.Dockerfile
+	hadolint docker/Dockerfile
+	hadolint docker/dev.Dockerfile
+	hadolint docker/dev.lint.Dockerfile
 lint-in-docker: build-docker-dev-lint
 	docker run mattgleich/cihat:lint
 
