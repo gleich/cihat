@@ -1,13 +1,18 @@
 package main
 
 import (
-	"fmt"
+	"time"
 
 	"github.com/Matt-Gleich/cihat/pkg/api"
+	"github.com/Matt-Gleich/cihat/pkg/lights"
 )
 
 func main() {
 	client := api.CreateClient()
-	out := api.GetChecks(client)
-	fmt.Println(out)
+
+	for {
+		checks := api.GetChecks(client)
+		lights.UpdateLights(checks)
+		time.Sleep(time.Second * 2)
+	}
 }
