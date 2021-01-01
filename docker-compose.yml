@@ -1,0 +1,11 @@
+version: "3"
+services:
+  cihat:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    privileged: true
+    logging:
+      options:
+        max-size: 200mb
+    restart: unless-stopped
