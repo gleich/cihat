@@ -7,6 +7,7 @@ import (
 	"github.com/nathany/bobblehat/sense/screen/color"
 )
 
+// Update the lights on the sense hat.
 func UpdateLights(queryContent api.QueryOutline) {
 	var (
 		repos = queryContent.Data.Viewer.Repositories.Edges
@@ -38,6 +39,7 @@ func UpdateLights(queryContent api.QueryOutline) {
 		}
 
 		if hasValidChecks {
+			x = 0
 			y++
 		}
 	}
