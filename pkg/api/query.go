@@ -3,13 +3,12 @@ package api
 const query = `{
 	viewer {
 	repositories(
-		first: 8
+		first: 7
 		orderBy: { field: PUSHED_AT, direction: DESC }
 		ownerAffiliations: [COLLABORATOR, OWNER]
 	) {
 		edges {
 		node {
-            name
 			defaultBranchRef {
 			target {
 				... on Commit {
@@ -34,7 +33,6 @@ type QueryOutline struct {
 			Repositories struct {
 				Edges []struct {
 					Node struct {
-						Name             string `json:"name"`
 						DefaultBranchRef struct {
 							Target struct {
 								CheckSuites struct {
