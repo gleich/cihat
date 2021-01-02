@@ -3,7 +3,7 @@ replace:
   - before: project_name
     after: cihat
   - before: project_description
-    after: 🥧 View the status of your repo checks from the RPi sense hat
+    after: 🥧 View the status of repo checks from a RPi sense hat LED matrix.
   - before: github_username
     after: Matt-Gleich
   - before: project_author_email

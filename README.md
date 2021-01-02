@@ -2,7 +2,7 @@
 
 # cihat
 
-🥧 View the status of your repo checks from the RPi sense hat
+🥧 View the status of repo checks from a RPi sense hat LED matrix.
 
 ![build](https://github.com/Matt-Gleich/cihat/workflows/build/badge.svg)
 ![test](https://github.com/Matt-Gleich/cihat/workflows/test/badge.svg)
