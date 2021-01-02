@@ -2,7 +2,7 @@ FROM golang:1.15
 
 # Meta data:
 LABEL maintainer="email@mattglei.ch"
-LABEL description="🥧 View the status of repo checks from a RPi sense hat LED matrix."
+LABEL description="🥧 View the status of repo checks from an RPi sense hat LED matrix"
 
 # Copying over all the files:
 COPY . /usr/src/app
