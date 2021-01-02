@@ -2,7 +2,7 @@ FROM golangci/golangci-lint:v1.33
 
 # Meta data
 LABEL maintainer="email@mattglei.ch"
-LABEL description="🥧 View the status of your repo checks from the RPi sense hat"
+LABEL description="🥧 View the status of repo checks from a RPi sense hat LED matrix."
 
 # Copying over files
 COPY . /usr/src/app
