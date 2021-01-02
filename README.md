@@ -22,19 +22,15 @@ Please run all the following steps on your RPi with the sense hat plugged in.
 
 ### 1. Install docker and docker-compose
 
-You can install both by running [./install-docker.sh](./install-docker.sh):
-
-```bash
-$ sh ./install-docker.sh
-```
+You can install both by running `sh ./install-docker.sh` from inside this repo.
 
 ### 2. Creating the PAT (Personal Access Token)
 
-[Create a new personal access token](https://github.com/settings/tokens/new) and check of the `repo:status` box. Copy that token and put it in a file in `~/cihat-config/pat.txt`.
+[Create a new personal access token](https://github.com/settings/tokens/new) and check off the `repo:status` box. Copy that token and put it in a file in `~/cihat-config/pat.txt`.
 
 ### 3. Start it up!
 
-Run `docker-compose up -d` from inside this repo. Thats it! You are all setup!
+Run `docker-compose up -d` from inside this repo. All done!
 
 ### 4. Shutting it down
 
