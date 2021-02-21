@@ -5,7 +5,7 @@ const query = `{
 	repositories(
 		first: 20
 		orderBy: { field: PUSHED_AT, direction: DESC }
-		ownerAffiliations: [COLLABORATOR, OWNER]
+		affiliations: [COLLABORATOR, OWNER]
 	) {
 		edges {
 		node {
