@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/Matt-Gleich/logoru"
+	"github.com/gleich/logoru"
 )
 
 // Get the checks from the API

@@ -1,12 +1,12 @@
-<!-- DO NOT REMOVE - contributor_list:data:start:["Matt-Gleich"]:end -->
+<!-- DO NOT REMOVE - contributor_list:data:start:["gleich"]:end -->
 
 # cihat
 
 🥧 View the status of repo checks from an RPi sense hat LED matrix
 
-![build](https://github.com/Matt-Gleich/cihat/workflows/build/badge.svg)
-![test](https://github.com/Matt-Gleich/cihat/workflows/test/badge.svg)
-![lint](https://github.com/Matt-Gleich/cihat/workflows/lint/badge.svg)
+![build](https://github.com/gleich/cihat/workflows/build/badge.svg)
+![test](https://github.com/gleich/cihat/workflows/test/badge.svg)
+![lint](https://github.com/gleich/cihat/workflows/lint/badge.svg)
 
 ## ❓ Explanation
 
@@ -38,12 +38,12 @@ You can stop cihat by running `docker-compose down` from inside this repo and ju
 
 ## 🙌 Contributing
 
-Before contributing please read the [CONTRIBUTING.md file](https://github.com/Matt-Gleich/cihat/blob/master/CONTRIBUTING.md).
+Before contributing please read the [CONTRIBUTING.md file](https://github.com/gleich/cihat/blob/master/CONTRIBUTING.md).
 
 <!-- DO NOT REMOVE - contributor_list:start -->
 
 ## 👥 Contributors
 
-- **[@Matt-Gleich](https://github.com/Matt-Gleich)**
+- **[@gleich](https://github.com/gleich)**
 
 <!-- DO NOT REMOVE - contributor_list:end -->

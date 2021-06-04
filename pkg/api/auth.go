@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/Matt-Gleich/logoru"
+	"github.com/gleich/logoru"
 	"golang.org/x/oauth2"
 )
 

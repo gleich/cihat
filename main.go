@@ -3,8 +3,8 @@ package main
 import (
 	"time"
 
-	"github.com/Matt-Gleich/cihat/pkg/api"
-	"github.com/Matt-Gleich/cihat/pkg/lights"
+	"github.com/gleich/cihat/pkg/api"
+	"github.com/gleich/cihat/pkg/lights"
 )
 
 func main() {
